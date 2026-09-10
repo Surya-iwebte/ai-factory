@@ -1,0 +1,7 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  # Assets configuration
+  assets:
+  - images/bird.png
+  - images/pipe.png
