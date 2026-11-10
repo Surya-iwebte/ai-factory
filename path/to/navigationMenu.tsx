@@ -1,20 +1,14 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-const NavigationMenu = () => {
+export function handleNavigation() {
   const history = useHistory();
 
-  const handleNavigation = (path) => {
-    history.push(path);
+  const goToMissions = () => {
+    history.push('/missions');
   };
 
   return (
-    <nav>
-      <button onClick={() => handleNavigation('/missions')}>Missions</button>
-      <button onClick={() => handleNavigation('/technologies')}>Technologies</button>
-      <button onClick={() => handleNavigation('/news')}>News</button>
-    </nav>
+    <button onClick={goToMissions}>Go to Missions</button>
   );
-};
-
-export default NavigationMenu;
+}
